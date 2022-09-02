@@ -1,0 +1,29 @@
+.footer{
+  padding: 50px 30px 46px;
+  background: #0B2D6B;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+
+  a{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &-phone{
+    a{
+      text-decoration: none;
+      display: inline-block;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
