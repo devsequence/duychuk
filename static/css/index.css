@@ -132,7 +132,10 @@ body {
   width: 480px;
   background: #fff; }
 
-.title-section {
+.text h2 {
+  margin-top: 50px; }
+
+.title-section, .text h2 {
   font-weight: 800;
   font-size: 30px;
   line-height: 36px;
@@ -141,7 +144,7 @@ body {
   padding-bottom: 10px;
   margin-bottom: 27px;
   position: relative; }
-  .title-section:after {
+  .title-section:after, .text h2:after {
     position: absolute;
     content: '';
     left: 0;
@@ -149,7 +152,7 @@ body {
     width: 100px;
     height: 2px;
     background: #F97945; }
-  .title-section span {
+  .title-section span, .text h2 span {
     color: #F97945; }
 
 .header {
@@ -162,7 +165,8 @@ body {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  position: relative; }
   .footer a {
     font-weight: 300;
     font-size: 16px;
@@ -171,11 +175,17 @@ body {
     text-decoration: underline; }
     .footer a:hover {
       text-decoration: none; }
-  .footer-phone a {
-    text-decoration: none;
-    display: inline-block; }
-    .footer-phone a:hover {
-      text-decoration: underline; }
+  .footer-phone {
+    margin-bottom: 28px; }
+    .footer-phone a {
+      text-decoration: none;
+      display: inline-block; }
+      .footer-phone a:hover {
+        text-decoration: underline; }
+  .footer-link {
+    margin-top: 10px; }
+    .footer-link li {
+      margin-bottom: 10px; }
 
 .hero-title {
   padding: 20px 20px;
@@ -478,3 +488,46 @@ body {
 
 .hidden {
   display: none; }
+
+.text-page {
+  padding: 0 0 80px;
+  border-top: 6px solid #F97945; }
+  .text-page .page-subtitle {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    color: #fff;
+    background: #0B2D6B;
+    text-align: center;
+    padding: 10px; }
+  .text-page .title-section {
+    padding: 0 30px 13px;
+    margin-bottom: 15px; }
+    .text-page .title-section:after {
+      left: 30px; }
+  .text-page .text-media {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; }
+    .text-page .text-media span {
+      width: 100%;
+      display: block;
+      height: 20px;
+      background: #0B2D6B; }
+  .text-page .text {
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #202020;
+    padding: 0 30px; }
+    .text-page .text p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+
+.soc-icon {
+  position: absolute;
+  right: 15px;
+  top: -30px; }
